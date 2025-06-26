@@ -1,35 +1,98 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAC0102</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAC0102 - Caminhos no Bacharelado em Ciência da Computação</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 2rem;
+      margin: 0;
       background-color: #f4f4f4;
       color: #333;
-      max-width: 800px;
     }
 
-    a {
-      color: black;
+    header {
+      background-color: black;
+      color: white;
+      padding: 2rem;
+      text-align: center;
     }
 
-    h1 {
+    nav {
+      background-color: darkgray;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
       color: black;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>MAC0102 - Caminhos no Bacharelado em Ciência da Computação</h1>
-  <p><em>Publicado em 26 de junho de 2025</em></p>
+  <header>
+    <h1>MAC0102 - Caminhos no Bacharelado em Computação</h1>
+  </header>
 
-  <p>Essa postagem busca descrever minhas impressões com a disciplina MAC0102 - Caminhos no Bacharelado em Ciência da Computação e quais trilhas devo seguir ao longo da graduação.</p>
+  <nav>
+    <a href="index.html">Página Principal</a>
+  </nav>
 
-  <p>bla bla bla</p>
+  <main>
+    <section>
+      <h2>Publicação</h2>
+      <p><em>Publicado em 26 de junho de 2025</em></p>
 
-  <p><a href="index.html">← Voltar à página principal</a></p>
+      <p>Essa postagem busca descrever minhas impressões com a disciplina MAC0102 - Caminhos no Bacharelado em Ciência da Computação e quais trilhas devo seguir ao longo da graduação.</p>
+
+      <p>bla bla bla</p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Thales Watanabe Santana. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
