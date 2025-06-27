@@ -20,6 +20,12 @@
       padding: 2rem 1rem;
       position: fixed;
       height: 100vh;
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+    }
+
+    .sidebar.hidden {
+	transform: translateX(-100%);
     }
 
     .sidebar h2 {
@@ -48,6 +54,11 @@
       margin-left: 220px;
       padding: 2rem;
       flex: 1;
+      transition: margin-left 0.3s ease-in-out;
+    }
+
+    .content.full {
+	margin-left: 0;
     }
 
     .content h2 {
@@ -71,6 +82,21 @@
       font-size: 0.9rem;
       color: #888;
     }
+    
+    #toggleSidebar {
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	z-index: 1001;
+	background-color: #333;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	border-radius: 5px;
+    }
+
   </style>
 </head>
 <body>
@@ -81,6 +107,7 @@
   </div>
 
   <div class="content">
+    <button id="toggleSidebar">☰ Menu</button>
     <h1>Página Principal</h1>
     <p>Esta é minha página pessoal acadêmica. Use os links na barra lateral para navegar pelos conteúdos.</p>
 
@@ -99,5 +126,17 @@
       &copy; 2025 Thales Watanabe Santana. Todos os direitos reservados.
     </footer>
   </div>
+
+  <script>
+    const toggleButton = document.getElementById('toggleSidebar');
+    const sidebar = document.querySelector('.sidebar');
+    const content = document.querySelector('.content');
+
+    toggleButton.addEventListener('click', () => {
+	sidebar.classList.toggle('hidden');
+	content.classList.toggle('full');
+    });
+  </script>
+  
 </body>
 </html>
