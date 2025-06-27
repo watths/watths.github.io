@@ -122,22 +122,24 @@
   <div class="sidebar">
     <img src="Cat.jpg" alt="Imagem" class="profile-img">
     <h2>Thales Watanabe Santana</h2>
-    <a href="index.html">Página Inicial</a>
-    <a href="MAC0102.html" class="active">MAC0102</a>
+    <a href="index.html" class="active">Página Inicial</a>
+    <a href="MAC0102.html">MAC0102</a>
   </div>
 
   <div class="content">
     <button id="toggleSidebar">☰ Menu</button>
-    <h1>MAC0102</h1>
-    <p>Caminhos no Bacharelado em Ciência da Computação</p>
+    <h1>Página Principal</h1>
+    <p>Esta é minha página pessoal acadêmica. Use os links na barra lateral para navegar pelos conteúdos.</p>
 
     <section>
-      <h2>Publicação</h2>
-      <p><em>Publicada no dia 26 de junho de 2025</em></p>
-      
-      <p><em>Essa postagem busca descrever minhas impressões com a disciplina MAC0102 - Caminhos no Bacharelado em Ciência da Computação e quais trilhas devo seguir ao longo da graduação.</em></p>
+      <h2>Sobre</h2>
+      <p>Estudante de Ciência da Computação no Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP). Tenho interesse nas áreas de Inteligência Artificial, Machine Learning, Estrutura de Dados e Engenharia de Software.</p>
+    </section>
 
-      <p>bla bla bla</p>
+    <section>
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:thaleswat@usp.br">thaleswat@usp.br</a></p>
+      <p>GitHub: <a href="https://github.com/watths" target="_blank">/watths</a></p>
     </section>
 
     <footer>
