@@ -48,7 +48,7 @@
 
     .sidebar a:hover {
       background-color: #222;
-      color: #ccc;
+      color: white;
     }
 
     .sidebar a.active {
@@ -90,14 +90,20 @@
     }
 
     #toggleSidebar {
-	background-color: black; /* fundo preto */
-	color: #ccc;             /* texto cinza */
+	background-color: black;
+	color: #ccc;             
 	border: 1px solid #444;
 	padding: 0.4rem 0.8rem;
 	font-size: 1rem;
 	cursor: pointer;
 	border-radius: 5px;
 	margin-bottom: 1rem;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+
+    #toggleSidebar:hover {
+	background-color: #222; 
+	color: white;
     }
 
   </style>
