@@ -116,6 +116,27 @@
 	border: 2px solid #444;
     }
 
+    ul.custom-list {
+        list-style: none;          
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    ul.custom-list li {
+        background-color: #1a1a1a; 
+        margin-bottom: 0.5rem;
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
+        border-left: 4px solid #888;
+        color: #ccc;
+        transition: background-color 0.3s ease;
+    }
+
+    ul.custom-list li:hover {
+        background-color: #2a2a2a;
+    }
+
+
   </style>
 </head>
 <body>
@@ -129,17 +150,29 @@
   <div class="content">
     <button id="toggleSidebar">☰ Menu</button>
     <h1>Página Principal</h1>
-    <p>Página pessoal acadêmica de Thales Watanabe Santana. Utilize o menu lateral para acessar o conteúdo.</p>
+    <p>Página pessoal acadêmica de Thales Watanabe Santana. Utilize o menu para acessar os conteúdos da página.</p>
 
     <section>
       <h2>Sobre</h2>
-      <p>Estudante de Ciência da Computação no Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP). Tenho interesse nas áreas de Inteligência Artificial, Machine Learning, Estrutura de Dados e Engenharia de Software.</p>
+      <p>Sou estudante de Ciência da Computação no Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP).</p>
+
+      <section>
+	<h2>Áreas de Interesse</h2>
+	<ul class="custom-list">
+	  <li>Inteligência Artificial</li>
+	  <li>Machine Learning</li>
+	  <li>Estrutura de Dados</li>
+	  <li>Engenharia de Software</li>
+	</ul>
+      </section>
+
+      </p>
     </section>
 
     <section>
       <h2>Contato</h2>
       <p>Email: <a href="mailto:thaleswat@usp.br">thaleswat@usp.br</a></p>
-      <p>GitHub: <a href="https://github.com/watths" target="_blank">/watths</a></p>
+      <p>GitHub: <a href="https://github.com/watths" target="_blank">watths</a></p>
     </section>
 
     <footer>
